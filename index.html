@@ -167,16 +167,52 @@
         <h3>FOR the Proposition</h3>
 
         <figure>
-          <img src="IMAGE_FILENAME" alt="" />
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <img src="images/supporting.png" alt="supporting image" />
+          <figcaption>
+            Average NYPD complaints per officer steadily declined from 1985 to
+            2019
+          </figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>RATIONALE_3</li>
+          <li>
+            [2] Data Transformations: The dataset was grouped by the year in
+            which each complaint was received, and the total number of unique
+            complaints (complaint_id) was calculated for each year. The number
+            of distinct officers (unique_mos_id) involved in complaints during
+            the same period was then determined. Dividing the total number of
+            complaints by the number of officers ecah year produced the average
+            number complaints per officer, providing a normalized measure that
+            accounts for fluctuations in the size of the police force over time
+          </li>
+          <li>
+            [2] Downward Trend Line: A linear trend line was added to highlight
+            the overall decline in average complaints per officer over time,
+            drawing attention to the long-term pattern rather than year-to-year
+            fluctuations
+          </li>
+          <li>
+            [-1] Truncating the Y-Axis: The y-axis begins at 0.8 instead of 0 to
+            visually accentuate the decrease in complaint rates. This design
+            choice makes the downard trend appear steeper, enhancing the visual
+            impression of improvement over time
+          </li>
+          <li>
+            [1.5] Dropped Values: Data from 2020 was omitted due to incomplete
+            records, as complaints were collected only during the early months
+            of that year. Including this partial data would have created a
+            misleading spike in the average complaints per officer. Removing it
+            ensures the visualization maintains a consistent comparison across
+            years
+          </li>
+          <li>
+            [2] Annotations: Text labels were added to mark the peak and lowest
+            points of the trend. These annotations guide viewers toward the most
+            significant moments in the data, reinforcing the main proposition
+            that the NYPD is held accountable for civilian complaints
+          </li>
         </ul>
       </section>
 
@@ -184,8 +220,11 @@
         <h3>AGAINST the Proposition</h3>
 
         <figure>
-          <img src="IMAGE_FILENAME" alt="" />
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <img src="images/opposing.png" alt="opposing image" />
+          <figcaption>
+            Complaints involving use of force are rarely substantiated,
+            indicating persistent gaps in officer accountability
+          </figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
