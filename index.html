@@ -185,19 +185,19 @@
             the same period was then determined. Dividing the total number of
             complaints by the number of officers each year produced the average
             number complaints per officer, providing a normalized measure that
-            accounts for fluctuations in the size of the police force over time
+            accounts for fluctuations in the size of the police force over time.
           </li>
           <li>
             [2] Downward Trend Line: A linear trend line was added to highlight
             the overall decline in average complaints per officer over time,
             drawing attention to the long-term pattern rather than year-to-year
-            fluctuations
+            fluctuations.
           </li>
           <li>
             [-1] Truncated Y-Axis: The y-axis begins at 0.8 instead of 0 to
             visually accentuate the decrease in complaint rates. This design
-            choice makes the downward trend appear steeper, enhancing the visual
-            impression of improvement over time
+            choice makes the downard trend appear steeper, enhancing the visual
+            impression of improvement over time.
           </li>
           <li>
             [1.5] Dropped Values: Data from 2020 was omitted due to incomplete
@@ -205,13 +205,13 @@
             of that year. Including this partial data would have created a
             misleading spike in the average complaints per officer. Removing it
             ensures the visualization maintains a consistent comparison across
-            years
+            years.
           </li>
           <li>
             [2] Annotations: Text labels were added to mark the peak and lowest
             points of the trend. These annotations guide viewers toward the most
             significant moments in the data, reinforcing the main proposition
-            that the NYPD is held accountable for civilian complaints
+            that the NYPD is held accountable for civilian complaints.
           </li>
         </ul>
       </section>
@@ -231,29 +231,55 @@
 
         <ul>
           <li>
-            [-0.5] Truncated Y-Axis: The y-axis begins at 0.5 rather than 0 to
-            exaggerate the perceived decline in substantation rates over time.
-            This framing choice visually amplifies small variations, making the
-            downward trend appear steeper and more pronounced than it actually
-            is.
+            [2] Dropped 2020 Values: The year 2020 was intentionally excluded
+            from the visualization because complaint data from that year is
+            incomplete, likely as a result of the ongoing reporting period.
+            Including data from that year would have introduced inaccuracies and
+            falsely suggest a sharp decline in both complaints and
+            substantiation rate. By removing this partial data, the
+            visualization maintains a more consistent and fair representation of
+            trends over time.
           </li>
           <li>
-            [-2] Title Framing: The title employs emotionally charged language
-            to establish a critical tone. By emphasizing that officers "rarely
-            face consequences," the visualization primes viewers to interpret
-            the data as evidence of systemic accountability issues within the
-            NYPD. However, this framing hides contextual information, such as
-            the rising number of total substantiated cases in recent years,
-            which would provide a more balanced perspective
+            [-2] Framing bias through the title and interpretation: The
+            visualization's title, "Officers Accused of Using Force Rarely Face
+            Consequences," frames the data and conclusion in a negative light.
+            It looks like there is a direct casual relationship between the
+            number of force-related complaints and a low substantiation rate.
+            While persuasive, this framing overlooks that the total number of
+            substantiated comlpaints has increased over time. Moreover, around
+            1997, there were roughly 30 complaints * 0.4 substantiation rate =
+            12 substantiated complaints, whereas by 2015, approximately 550
+            complaints * 0.7 substation rate = 385 substantiated complaints. By
+            focusing only on the ratio rather than the total substantiated
+            outcomes, the visualization makes it seem as though accountability
+            has declined. However, in reality, the number of officers facing
+            consequences has increased, reavealing a deceptive framing that
+            supports the opposing argument.
           </li>
           <li>
-            [-1] Selective Filtering: The visualization focuses exclusively on
-            complaints involving use of force, excluding other categories. This
-            selective focus narrows the audience's attention to one of the most
-            severe complaint types, heightening the emotional and ethical weight
-            of the visualization. While this strengthens hte persuasive
-            narrative, it presents an invcomplete picture of overall complaint
-            outcomes across the departments
+            [-1] Selective Framing: The visualization focuses on complaints
+            categorized under "fado_type" == force, ignoring all other possible
+            categories. This selective inclusino amplifies the perception that
+            the NYPD is not held accountable, as it highlightsa specific area of
+            concern. By filtering the data in this way, the visualization limits
+            the viewer's understanding of overll accountability trends across
+            the department. If other complaint types were included, the
+            substantiation rate may appear more balanced, potentially altering
+            the narrative.
+          </li>
+          <li>
+            [-2] Dual-axis Manipulation and Misleading Color Coding: The
+            visualization uses two y-axes (Red for total complaints, blue for
+            substantiation rate) to suggest a relationship between metrics that
+            are not directly comparable. The shared area between the two lines
+            creates the illusion of a growing "gap" between complaints and
+            accountability, as if the difference were a meaningul measure.
+            However, the two variables are plotted on unrelated scales, so the
+            shaded region does not represent any real quantity. This design
+            choice misleads viewers into believing that accountability has
+            declined over time, when the visual difference is merely a result of
+            axes manipulation.
           </li>
         </ul>
       </section>
