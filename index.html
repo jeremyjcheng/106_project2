@@ -159,8 +159,8 @@
 
     <main>
       <h2>
-        Proposition: The NYPD is held adequately accountable for
-        civilian complaints
+        Proposition: The NYPD is held adequately accountable for civilian
+        complaints
       </h2>
 
       <section>
@@ -272,12 +272,11 @@
             [-2] Dual-axis Manipulation: The
             visualization uses two y-axes (Red for total complaints, blue for
             substantiation rate) to suggest a relationship between metrics that
-            are not directly comparable. 
-            However, the two variables are plotted on unrelated scales, so the
-            shaded region does not represent any real quantity. This design
-            choice misleads viewers into believing that accountability has
-            declined over time, when the visual difference is merely a result of
-            axes manipulation.
+            are not directly comparable. However, the two variables are plotted
+            on unrelated scales, so the shaded region does not represent any
+            real quantity. This design choice misleads viewers into believing
+            that accountability has declined over time, when the visual
+            difference is merely a result of axes manipulation.
           </li>
         </ul>
       </section>
@@ -285,53 +284,44 @@
       <section>
         <h2>Final Reflection</h2>
         <p>
-          This project examines whether the NYPD is held adequately accountable for 
-          civilian complaints. The supporting visualization indicate the
-          NYPD officer behavior has moved in a positive direction, reflecting a genuine
-          process in NYPD's accountability. In contrast, the opposing visualization 
-          suggests that while the total number of use-of-force complaints (red line) 
-          surged after 2002, the substantiation rate for these complaints (blue line) 
-          did not increase along with it. In fact, the rate is far lower than its peak 
-          in the late 1980s and early 1990s. This gap highlights the decreasing 
-          accountability of the police force. Both viewpoints don't have a clear right or 
-          wrong answer, as they each present valid interpretations of the data. It depends 
-          on how the viewer chooses to frame the issue of police accountability.
+          Our goal for this project was to determine whether the NYPD is held
+          accountable for civilian complaints. While creating these
+          visualizations, there were parts that were straightforward and others
+          were difficult and required careful thought. It was easy to group by
+          year and by officer, compute totals and averages, then produce line
+          plots. However, what was difficult was crafting credible and accurate
+          visualizations for both the supporting and opposing sides when the
+          data did not always match our initial expectations. Thus, we had to
+          explore multiple tables and relationships within the dataset before we
+          found consistent data that could fairly represent each side of the
+          proposition. Balancing clarity, analytical depth, and bias was also
+          challenging because we needed visuals that were impactful without
+          altering the underlying data.
         </p>
         <p>
-          One surprising aspect of this project was how different data
-          transformations could completely change how trends appeared. For
-          instance, calculating ratios, such as the substantiation rate of force
-          complaints, made long-term patterns much clearer and highlighted how
-          the issue of excessive force has persisted over time. We also
-          discovered that visual form plays a major role in persuasion:
-          combining a line chart with a regression line often produced the most
-          convincing narrative. By emphasizing the overall downward or upward
-          trend, these visuals helped audiences focus on the broader pattern
-          rather than minor year-to-year fluctuations. 
-          At the same time, creating persuasive yet ethical visualizations proved to be a
-          challenging balance. While it was relatively easy to compute yearly
-          averages using groupby functions and generate line plots, finding data
-          that convincingly supported either side of our proposition required
-          extensive exploration. In many cases, the data did not align with our
-          initial expectations causing many road bumps, forcing us to rethink
-          how to best represent it. The most difficult aspect was maintaining
-          analytical depth and clarity without oversimplifying complex patterns
-          or creating misleading narratives through poor design choices. Subtle
-          visual techniques, such as axis scaling or selective filtering, could
-          make trends appear more dramatic than they truly were, reminding us
-          how easily data can be manipulated to fit a desired story.
+          We were surprised by how much ratios clarified the patterns in the
+          data. Looking at the substantiation rate for use-of-force complaints
+          made long-term trends easier to identify and suggested that problems
+          with excessive force have not improved as much as raw counts imply.
+          Moreover, we also learned that a simple line chart with a regression
+          line can be very persuasive. By highlighting the overall trend, the
+          regression line helps viewers focus on the big picture and overall
+          downward trend rather than getting distracted by small year-to-year
+          fluctuations.
         </p>
         <p>
-          Through this process, we came to define ethical analysis and
-          visualization as the effort to present data truthfully, without
-          ignoring unfavorable information or reinforcing bias. Ethical
-          visualization means helping audiences correctly interpret the data's
-          meaning without being influenced by misleading design choices.
-          Techniques like truncating axes, using emotionally charged titles, or
-          selectively filtering data can all skew perception, so maintaining
-          transparency about these decisions is essential to establish trust. An
-          ethical visualization should reveal the full context behind the data,
-          acknowledging its limitations and potential sources of bias.
+          Ethical analysis and visualization means telling the truth with data
+          in a way that allows other to reach to reach the same conclusions if
+          they were to analyze the data themselves. Ethical analysis requires
+          showing enough context to make claims credible and verifiable. It also
+          means being transparent about any data cleaning, transformations, or
+          other design choices. The line between "acceptable" persuasive choices
+          and "misleading" choices is whether the design clarifies without
+          hiding or distorting anything. Acceptable choices keep axes, scales,
+          and labels faithful to the data, while misleading choices manipulate
+          these elements to exaggerate or downplay certain aspects. A simple
+          test is whether someone else can use the same data and steps to
+          recreate the visualizations and reach the same conclusion.
         </p>
       </section>
     </main>
